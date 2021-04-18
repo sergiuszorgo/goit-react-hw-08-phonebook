@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { authOperations } from '../redux/auth';
 
 const styles = {
+  loginForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   form: {
     width: 320,
   },
@@ -32,12 +37,13 @@ class LoginView extends Component {
   render() {
     const { email, password } = this.state;
     return (
-      <>
+      <div style={styles.loginForm}>
         <h1>Login page</h1>
         <form onSubmit={this.handleSumbit} style={styles.form}>
           <label style={styles.label}>
             <p>E-mail:</p>
             <input
+              className="inputForm"
               type="email"
               name="email"
               value={email}
@@ -47,15 +53,18 @@ class LoginView extends Component {
           <label style={styles.label}>
             <p>Password:</p>
             <input
+              className="inputForm"
               type="password"
               name="password"
               value={password}
               onChange={this.handleChange}
             />
           </label>
-          <button type="submit">Login</button>
+          <button type="submit" className="formBtn">
+            Login
+          </button>
         </form>
-      </>
+      </div>
     );
   }
 }

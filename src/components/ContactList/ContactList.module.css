@@ -2,6 +2,11 @@
   padding: 5px;
   margin: 0 auto;
 }
+
+.Align {
+  text-align: center;
+}
+
 .ContactList {
   max-width: 500px;
   margin: 0 auto;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import '../App.css';
 import ContactList from '../components/ContactList';
 import ContactForm from '../components/ContactForm';
 import SearchForm from '../components/SearchForm';
@@ -13,8 +12,8 @@ class ContactsView extends Component {
   render() {
     const { contacts } = this.props;
     return (
-      <div className="App">
-        <h1>Phonebook</h1>
+      <div>
+        <h1 className="title">Phonebook</h1>
         <ContactForm />
         {contacts.length > 1 && <SearchForm />}
         {this.props.isLoadingContacts ? (

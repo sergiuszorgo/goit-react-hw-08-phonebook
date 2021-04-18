@@ -6,7 +6,7 @@ import { phonebookOperations, phonebookSelectors } from '../../redux/phonebook';
 
 const ContactList = ({ contacts, deleteContact }) => (
   <div className={s.ContactBox}>
-    <h2>Contacts: {contacts.length}</h2>
+    <h2 className={s.Align}>Contacts: {contacts.length}</h2>
     <ul className={s.ContactList}>
       {contacts.map(({ id, name, number }) => (
         <li key={id} className={s.ContactListItem}>

@@ -7,6 +7,7 @@ import { authSelectors } from '../redux/auth';
 
 const styles = {
   header: {
+    // minWidth: '320px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

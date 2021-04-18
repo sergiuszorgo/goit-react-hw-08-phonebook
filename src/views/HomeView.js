@@ -1,21 +1,10 @@
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
-};
-
 const HomeView = () => (
-  <div style={styles.container}>
-    <h1 style={styles.title}>Welcome to the site!</h1>
-  </div>
+  <>
+    <h1 className="title">
+      Welcome to your
+      <br /> phonebook!
+    </h1>
+  </>
 );
 
 export default HomeView;
