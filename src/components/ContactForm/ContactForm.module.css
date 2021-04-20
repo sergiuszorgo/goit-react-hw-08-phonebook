@@ -8,9 +8,8 @@
   border: 1px solid lightslategray;
   border-radius: 3px;
   text-align: center;
-  font-weight: 500;
 }
-
+/* 
 .formList label {
   display: flex;
   flex-flow: column;
@@ -54,4 +53,4 @@
   -webkit-box-shadow: 1px 2px 2px 1px rgb(26 15 232 / 0.5);
   -moz-box-shadow: 1px 2px 2px 1px rgb(26 15 232 / 0.5);
   box-shadow: 1px 2px 2px 1px rgb(26 15 232 / 0.5);
-}
+} */

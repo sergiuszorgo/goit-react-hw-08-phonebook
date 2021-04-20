@@ -70,9 +70,7 @@ class ContactForm extends Component {
             onChange={this.inputChange}
           />
         </label>
-        <button className={s.formBtn} onClick={this.pushContact}>
-          Add contact
-        </button>
+        <button onClick={this.pushContact}>Add contact</button>
       </form>
     );
   }

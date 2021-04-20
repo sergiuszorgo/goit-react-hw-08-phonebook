@@ -1,17 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import propTypes from 'prop-types';
-import s from './SearchForm.module.css';
+// import s from './SearchForm.module.css';
 import { phonebookSelectors, changeFilter } from '../../redux/phonebook';
 
 const SearchForm = ({ filter, inputForm }) => {
   return (
-    <div className={s.searchForm}>
+    <section>
       <label htmlFor="">
         Find contact by name{' '}
         <input type="text" name="filter" value={filter} onChange={inputForm} />
       </label>
-    </div>
+    </section>
   );
 };
 
